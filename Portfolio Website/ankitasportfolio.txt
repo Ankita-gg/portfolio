@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankita Ghosh | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --navy: #0a1a40;
+      --peach: #ffb997;
+      --cream: #fff7f0;
+      --gold: #e6af2e;
+      --font-head: 'Playfair Display', serif;
+      --font-body: 'Poppins', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: var(--navy);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { color: var(--peach); }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 100px;
+    }
+    .hero-text { max-width: 50%; }
+    .hero-text h1 {
+      font-size: 60px;
+      font-family: var(--font-head);
+    }
+    .hero-text h2 { font-size: 24px; margin: 15px 0; color: var(--gold); }
+    .hero-text p { font-size: 18px; color: #444; }
+
+    .hero img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 6px solid var(--gold);
+      object-fit: cover;
+      box-shadow: 0px 8px 25px rgba(230,175,46,0.6);
+    }
+
+    section { padding: 60px 100px; }
+
+    section h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      font-family: var(--font-head);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover { transform: translateY(-8px); }
+
+    .card h4 { color: var(--gold); margin-bottom: 10px; }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .card a:hover { color: var(--peach); }
+
+    .contact-icons a {
+      margin: 0 12px;
+      font-size: 26px;
+      color: var(--navy);
+      transition: 0.3s;
+    }
+
+    .contact-icons a:hover { color: var(--peach); }
+
+    .footer {
+      text-align: center;
+      padding: 25px;
+      background: var(--navy);
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div><strong>Ankita Ghosh</strong></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero" id="about">
+  <div class="hero-text">
+    <h1>Hello, I'm Ankita</h1>
+    <h2>Aspiring Software Engineer | AI/ML Enthusiast</h2>
+    <p>
+      Results-driven Computer Science undergraduate with hands-on experience in software development,
+      machine learning, and cloud platforms. Passionate about building scalable, secure, data-driven applications.
+    </p>
+  </div>
+  <img src="formalphoto.jpg" alt="Ankita Ghosh">
+</section>
+
+<section id="experience">
+  <h3>Work Experience</h3>
+  <div class="grid">
+
+    <div class="card">
+      <h4>Software Intern – IEDC Labs Innovation Cell, UEM Kolkata</h4>
+      <p>May 2025 – June 2025</p>
+      <ul>
+        <li>Executed Software-in-Loop simulations for Automated Car Parking project.</li>
+        <li>Engineered object detection algorithms using MATLAB.</li>
+        <li>Achieved accurate obstacle detection within 2m radius.</li>
+        <li>Reduced false obstacle positives by ~30%.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>AIML Intern – IBM SkillsBuild</h4>
+      <p>June 2024 – July 2024</p>
+      <ul>
+        <li>Built Kidney Stone Prediction ML model.</li>
+        <li>Achieved 92% prediction accuracy.</li>
+        <li>Deployed Food Ordering Website on IBM Cloud.</li>
+        <li>Integrated Watsonx chatbot reducing query response by 40%.</li>
+        <li>Disease Detection system with 85%+ precision.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <h3>Projects</h3>
+  <div class="grid">
+
+    <div class="card">
+      <h4>CNN Implementation from Scratch (Java)</h4>
+      <p>Deep Learning network built without external ML libraries.</p>
+      <a href="https://github.com/Ankita-gg/Convolutional-Neural-Network" target="_blank">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h4>Organ Donation System using Blockchain</h4>
+      <p>Decentralized Java application using SHA-256 hashing.</p>
+      <a href="https://github.com/Ankita-gg/Organ-Donation-System" target="_blank">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h4>MediTrack – Progressive Web App</h4>
+      <p>Offline-enabled PWA with authentication & pharmacy finder.</p>
+      <a href="https://github.com/Ankita-gg/MediTrack-pwa" target="_blank">GitHub</a><br>
+      <a href="https://meditrack-reminder-app.netlify.app/" target="_blank">Live Demo</a>
+    </div>
+
+    <div class="card">
+      <h4>Customer Churn ML Dashboard</h4>
+      <p>Streamlit ML dashboard using Random Forest.</p>
+      <a href="https://github.com/Ankita-gg/Data-Driven-Insights-Dashboard/tree/main/Data-Driven-Insights-Dash" target="_blank">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h3>Technical Skills</h3>
+  <ul>
+    <li><strong>Languages:</strong> Java, Python, HTML, CSS, JavaScript, SQL</li>
+    <li><strong>Technologies:</strong> DBMS, DSA, REST APIs, Machine Learning, AI</li>
+    <li><strong>Developer Tools:</strong> Git, IBM Watsonx Assistant, IBM Cloud, AWS, GitHub, VS Code</li>
+    <li><strong>Libraries:</strong> Pandas, NumPy, Matplotlib</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h3>Contact</h3>
+  <p>Email: <a href="mailto:ankitaghoshchs@gmail.com">ankitaghoshchs@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/ankita-ghosh-5ba727289/" target="_blank">linkedin.com/in/ankita-ghosh-5ba727289</a></p>
+  <p>GitHub: <a href="https://github.com/Ankita-gg" target="_blank">github.com/Ankita-gg</a></p>
+
+  <div class="contact-icons">
+    <a href="mailto:ankitaghoshchs@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/ankita-ghosh-5ba727289/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/Ankita-gg" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</section>
+
+<div class="footer">
+  <p>© 2026 Ankita Ghosh | Portfolio</p>
+</div>
+
+</body>
+</html>
